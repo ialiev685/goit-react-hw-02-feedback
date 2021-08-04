@@ -1,8 +1,10 @@
+import FeedbackSection from "./components/FeedbackSection";
+
 const App = () => {
   return (
-    <div>
-      <p>тест</p>
-    </div>
+    <>
+      <FeedbackSection />
+    </>
   );
 };
 
