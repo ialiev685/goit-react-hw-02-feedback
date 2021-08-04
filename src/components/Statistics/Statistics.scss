@@ -1,0 +1,18 @@
+.Statistics {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &__title {
+    font-size: 26px;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 18px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

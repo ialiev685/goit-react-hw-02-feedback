@@ -1,0 +1,10 @@
+.Section {
+  width: 400px;
+
+  margin: 0 auto;
+  &__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-size: 30px;
+  }
+}
