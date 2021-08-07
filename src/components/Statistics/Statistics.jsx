@@ -11,7 +11,7 @@ const Statistics = (props) => {
     <div className="Statistics">
       <h2 className="Statistics__title">Statistics</h2>
       <ul className="Statistics__list">
-        {[...keys].map((el) => (
+        {keys.map((el) => (
           <StatisticItem key={el} text={el} value={props[el]} />
         ))}
       </ul>
