@@ -2,26 +2,20 @@ import "./StatisticItem.scss";
 
 import PropTypes from "prop-types";
 
-const StatisticItem = (props) => {
-  const { good, neutral, bad, total, positivePercentage } = props;
-
+const StatisticItem = ({ text, value }) => {
   return (
     <>
-      <li className="Statistics__item">Good: {good}</li>
-      <li className="Statistics__item">Neutral: {neutral}</li>
-      <li className="Statistics__item">Bad: {bad}</li>
-      <li className="Statistics__item">Total: {total}</li>
       <li className="Statistics__item">
-        Positive feedback: {positivePercentage}%
+        {text}: {value}
+        {text === "positivePercentage" ? "%" : ""}
       </li>
     </>
   );
 };
 
 StatisticItem.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
+  text: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
 };
 
 export default StatisticItem;
