@@ -1,0 +1,6 @@
+.Statistics__item {
+  font-size: 18px;
+}
+.Statistics__item:not(:last-child) {
+  margin-bottom: 5px;
+}
